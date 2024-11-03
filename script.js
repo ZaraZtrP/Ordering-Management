@@ -14,7 +14,7 @@ document.getElementById('orderForm').addEventListener('submit', function (e) {
                     `Detail Pesanan: ${order}`;
 
     // Encode URL untuk pengiriman
-    const whatsappUrl = `https://wa.me/083182068209?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/+6283182068209?text=${encodeURIComponent(message)}`;
 
     // Buka WhatsApp dengan URL yang sudah diencode
     window.open(whatsappUrl, '_blank');

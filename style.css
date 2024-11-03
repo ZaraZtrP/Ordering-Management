@@ -9,34 +9,44 @@ body {
     background-color: #f4f4f9;
 }
 
+h2 {
+    text-align: center;
+    color: #333;
+}
+
 form {
-    background: #ffffff;
+    width: 300px;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 label {
+    font-weight: bold;
     margin-top: 10px;
     display: block;
-    font-weight: bold;
+    color: #555;
 }
 
-input, textarea, button {
+input[type="text"],
+textarea {
     width: 100%;
+    padding: 10px;
     margin-top: 5px;
-    padding: 8px;
-    border-radius: 4px;
+    margin-bottom: 15px;
     border: 1px solid #ddd;
-    box-sizing: border-box;
+    border-radius: 5px;
 }
 
 button {
+    width: 100%;
+    padding: 10px;
     background-color: #28a745;
     color: white;
     font-size: 16px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 

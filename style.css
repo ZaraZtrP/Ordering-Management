@@ -4,39 +4,48 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     background-color: #f4f4f9;
+}
+
+.container {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     text-align: center;
     color: #333;
+    margin-bottom: 20px;
 }
 
-form {
-    width: 300px;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.form-group {
+    margin-bottom: 15px;
 }
 
 label {
     font-weight: bold;
-    margin-top: 10px;
-    display: block;
     color: #555;
+    display: block;
+    margin-bottom: 5px;
 }
 
 input[type="text"],
+input[type="tel"],
 textarea {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    resize: vertical;
+}
+
+textarea {
+    min-height: 80px;
 }
 
 button {
@@ -48,8 +57,21 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 button:hover {
     background-color: #218838;
+}
+
+/* Gaya untuk pesan konfirmasi */
+#confirmationMessage {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e7f5e6;
+    color: #2c6e49;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 1.6;
 }
